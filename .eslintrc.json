@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-tag-spacing": "warn",
+    "react/jsx-closing-tag-location": "warn",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "@typescript-eslint/semi": ["error", "never"],
+    "react/jsx-filename-extension": "off",
+    "arrow-parens": "off",
+    "linebreak-style": "off",
+    "import/namespace": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}
