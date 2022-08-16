@@ -4,7 +4,7 @@ import { PlusCircleFilled } from '@ant-design/icons'
 import { ITodo } from '../../interfaces'
 
 interface IAddTodoProps {
-  onFormSubmit: (todo: ITodo) => void;
+  onFormSubmit: (todo: ITodo) => void
 }
 
 export function AddTodo({ onFormSubmit } : IAddTodoProps) {
@@ -25,7 +25,7 @@ export function AddTodo({ onFormSubmit } : IAddTodoProps) {
         <Col>
           <Form.Item
             name="name"
-            rules={[{ required: true, message: 'This fiel is required' }]}
+            rules={[{ required: true, message: 'This field is required' }]}
           >
             <Input placeholder="What needs to be done?" />
           </Form.Item>
@@ -37,7 +37,7 @@ export function AddTodo({ onFormSubmit } : IAddTodoProps) {
             block
           >
             <PlusCircleFilled />
-            Add to-do
+            Add To-do
           </Button>
         </Col>
       </Row>

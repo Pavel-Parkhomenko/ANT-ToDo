@@ -32,7 +32,7 @@ export function TodoItem({ todo, onTodoRemove, onTodoToggle } : ITodoItemProps) 
           title="Are you sure you want to delete?"
           onConfirm={() => onTodoRemove(todo)}
         >
-          <Button type="primary" danger> Xe </Button>
+          <Button type="primary" danger> X </Button>
         </Popconfirm>
       ]}
     >

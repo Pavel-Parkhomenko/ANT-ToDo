@@ -1,0 +1,9 @@
+body, html {
+    height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: rgb(82, 115, 115);
+    }
+}
